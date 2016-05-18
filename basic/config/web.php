@@ -60,6 +60,8 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
+        //如果你通过本机以外的机器访问 Gii，请求会被出于安全原因拒绝。你可以配置 Gii 为其添加允许访问的 IP 地址：
+        //'allowedIPs' => ['127.0.0.1', '::1', '192.168.0.*', '192.168.178.20'] // 按需调整这里
     ];
 }
 
