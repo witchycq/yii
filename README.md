@@ -2,6 +2,7 @@
 cake
 
 <p style="font-size:30px;">
+<pre>
 yii     framework  learn
 
 CookieController.php
@@ -45,6 +46,6 @@ ViewController.php
 （数据验证  以及 数据库 增删改查 ）
 
 (MVC  模式  组成)
-
+</pre>
 
 </p>
