@@ -1,3 +1,6 @@
+
+yii -- 基础篇
+
 CookieController.php
   cookie 的使用
 CountryController.php
@@ -21,8 +24,6 @@ ViewController.php
    视图渲染 使用
 
 
-
-
 总结:
 
 框架安装
@@ -43,5 +44,12 @@ ViewController.php
 
 
 已转移到 readme.md  文件
+
+yii  高效篇
+
+    类的延迟加载
+
+    类的映射
+
 
 
