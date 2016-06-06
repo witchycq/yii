@@ -49,3 +49,27 @@ ViewController.php
 </pre>
 
 </p>
+
+<pre>
+  yii  高效篇
+
+类的延迟加载
+  --lazy_loading
+
+类的映射
+  --ClassmapController.php
+
+组件的延迟加载
+  --SessionController.php  /actionSessionlazy
+
+缓存
+ --配置
+web.php
+       'cache' => [
+            'class' => 'yii\caching\FileCache',
+
+
+
+
+
+</pre>

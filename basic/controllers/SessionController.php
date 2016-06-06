@@ -56,4 +56,12 @@ class SessionController extends Controller
         }
 
     }
+
+    /*
+     * 组件的延迟加载
+     */
+    public function actionSessionlazy(){
+        $session=\Yii::$app->session;
+
+    }
 }
