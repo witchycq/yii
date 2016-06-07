@@ -1,5 +1,3 @@
-
-
 <?php
 
 //缓存时间
@@ -17,27 +15,31 @@
 $enabled=true;
 ?>
 <?php
-/**
- * Created by PhpStorm.
- * User: witch
- * Date: 2016/6/6
- * Time: 21:43
- */
 //if ($this->beginCache('cache_div',['duration'=>$duration])) {
 //if ($this->beginCache('cache_div',['dependency'=>$dependency])) {
-if ($this->beginCache('cache_div',['enabled'=>$enabled])) {
+if ($this->beginCache('cache_outer_div',['duration'=>20])) {
     ?>
-    <div id="cache_div">
-        <div>这里会被缓存112211</div>
+    <div id="cache_outer_div">
+        <div>这里是外层</div>
     </div>
 
-<?php
+    <?php
+    if ($this->beginCache('cache_inner_div',['duration'=>1])) {
+        ?>
+        <div id="cache_inner_div">
+            <div>这里是内层</div>
+        </div>
+
+        <?php
+        $this->endCache();
+    }
+    ?>
+
+
+    <?php
     $this->endCache();
 }
 ?>
 
-<div id="no_cache_div">
-    <div>这里不会被缓存222 </div>
-</div>
 
 

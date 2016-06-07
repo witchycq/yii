@@ -69,7 +69,27 @@ web.php
             'class' => 'yii\caching\FileCache',
 
 
+片段缓存
+CacheController.php
+ --actionFragment
+ 嵌套缓存
+ CacheController.php
+ --actionQiantao
+页面缓存
+CacheController.php
+  --actionPage
+HTTP 缓存
+CachehttpController
 
+
+gii 代码生成器
+
+
+总结
+  延迟加载
+  多级缓存
+    --
+  gii 代码生成器
 
 
 </pre>
