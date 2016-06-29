@@ -2,6 +2,7 @@
 cake
 
 <p style="font-size:30px;">
+
 <pre>
 yii     framework  learn
 
@@ -90,6 +91,74 @@ gii 代码生成器
   多级缓存
     --
   gii 代码生成器
+
+
+</pre>
+<pre>
+ 安全篇
+
+
+1.xss（跨站脚本攻击）
+  --获取cookie
+  --盗号  httponly
+  --非法转账
+     --填写信息脚本
+     --注入到页面
+  --反射型XSS攻击
+  --chrom 浏览器 xss 过滤
+  --xss worm  xss 蠕虫
+
+
+  YII 防范 XSS
+   --实体编码  encode  htmlspacichars
+   --过滤（lexer）      htmlpurifier::process
+
+
+  csrf （跨站请求伪造）
+  防范
+   -- 验证码 用户体验
+   -- referer  发起请求的地址  （有些请求不会带头）
+   -- 防伪标识（相对有效） 随机的  wordpress用的这种方法
+
+  YII 方法措施
+  --表单隐藏域  name=_csrf   标识
+  --cookie保存一份 并且加密
+
+
+  sql 注入
+  yii 框架使用  PDO
+
+
+  文件上传漏洞
+  --
+
+
+总结  ::
+xss攻击
+
+    存储型攻击
+
+    发射型攻击
+
+      转义
+
+      lexer解析 过滤
+
+
+      csrf 攻击
+
+       get  post
+
+       隐藏随机数
+
+       SQL 注入
+
+       攻击方式
+
+        PDO  占位符
+
+        文件上传
+        绕过类型检查
 
 
 </pre>
